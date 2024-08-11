@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    padding: 20px 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.header__navigation-content{
+    display: flex;   
+}
+.header__navigation-content li{
+    list-style: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.header__navigation-list a{
+    text-decoration:none;
+    color: black;
+}
+.header__link-title{
+    text-decoration: none;
+    color: black;
+}
+.separator{
+    margin: auto;
+    border: 1px solid black;
+    width: 5%;
+    height: 15px;
+    background-color: black;
+}
+.profile__center-container {
+    display: flex;
+    align-items: center;
+}
+.profile__image-container img {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+}
+h1{
+    font-size: 45px;
+}
+.profile__content{
+    margin-left: 5%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.profile__text--strong{
+    font-weight: bold;
+}
+.profile__text--size{
+    width: 50%;
+    text-align: justify;
+}
+.profile{
+    margin: 5% 20% 5% 20%;
+}
+.profile__list{
+    display: flex;
+    list-style: none;
+    padding: 5px; 
+}
+.profile__list a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    position: relative;
+    top:20px;
+    font-weight: bold;
+    font-size: 12px; 
+}
+.profile__list li{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    text-align: center; 
+    margin-right: 20px; 
+}
+.profile__list-item--orange{
+    background-color: #eca404;
+}
+.profile__list-item--red{
+    background-color: #e13b25;
+}
+.profile__list-item--blue{
+    background-color: #80d8da;
+}
+
+.wrapper{
+    margin: 1% 7% 3%;
+}
+.wrapper__title{
+    margin: 4% 0 4% 0;
+}
+.wrapper__detail-text-strong{
+    font-weight: bold
+}
+.wrapper__detail{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    width: 100%;
+}
+.wrapper__detail--text-content{
+    width: 40%;
+    text-align: justify;
+}
+.image {
+    width: 20%;
+    height: auto;
+    max-height: 200px;
+  }
+.contact__section{
+   margin: 5% 20%  13%;
+}
+.contact__info{
+    display: flex;
+    justify-content: space-between;
+}
+.contact__form-group{
+    margin-right: 4%;
+}
+.contact__form-group input,.contact__form-message{
+    margin-top: 7%;
+    border-color: black;
+    height:20px;
+}
+textarea{
+    border-color: black;
+}
+.profile__list-item--submit{
+    margin-top: 25%;
+
+}
+footer{
+   display: flex;
+   justify-content: space-between;
+   width: 85%;
+   margin: auto;
+}
+@media screen and (max-width:600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        width: 100%;
+    }
+    .profile__center-container{
+        display: block;
+    }
+    .profile__content h1{
+        text-align: center;
+    }
+    .profile__text--size{
+        width: 100%;
+    }
+    .profile__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .profile__list li{
+        border: 1px solid black;
+        border-radius: 100%;
+        width: 130px;
+        height: 130px;
+       
+    }
+ .profile__list-item--button{
+        display: flex;
+        justify-content: center;
+    }   
+    .profile__list li a{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 30px;
+       font-size : 20px;
+    }
+    hr{
+        width: calc(100% - 40px);
+        margin: 0 auto; 
+        display: block;
+    }
+    .contact__info{
+        display: block;
+    }
+    .submit-contact{
+        margin-top: 25%;
+    }
+    .wrapper__detail{
+        display: block;
+        
+    }
+    .wrapper__detail img{
+        width: 100%;
+        margin-bottom: 10% ;
+    }
+    .wrapper__detail--text-content{
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .cvt__itle{
+        text-align: center;
+    }
+    footer{
+        display: block;
+        text-align: center;
+     
+    }
+    footer div{
+        padding: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .contact__section{
+        margin: 5%  4%  13%;
+    }
+}
