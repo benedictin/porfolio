@@ -35,22 +35,27 @@ nav{
     height: 15px;
     background-color: black;
 }
-.profile__center-container {
+.profile__center-container{
     display: flex;
-    align-items: center;
-}
+    justify-content: space-evenly
+}   
+    
 .profile__image-container img {
     width: 300px; 
     height: 300px;
     border-radius: 50%;
 }
+
+.profile__image-container{
+    width: 50%;
+    text-align: center;
+}
+
 h1{
     font-size: 45px;
 }
 .profile__content{
-    margin-left: 5%;
-    width: 100%;
-    margin-bottom: 20px;
+   width: 50%;
 }
 .profile__text--strong{
     font-weight: bold;
@@ -59,9 +64,7 @@ h1{
     width: 50%;
     text-align: justify;
 }
-.profile{
-    margin: 5% 20% 5% 20%;
-}
+
 .profile__list{
     display: flex;
     list-style: none;
@@ -108,7 +111,9 @@ h1{
     justify-content: space-between;
 }
 hr{
-    width: 100%;
+    width: calc(100% - 40px);
+    margin: 0 auto; 
+    display: block;
 }
 .wrapper__detail--text-content{
     width: 40%;
@@ -139,6 +144,7 @@ textarea{
 }
 .profile__list-item--submit{
     margin-top: 25%;
+   
 
 }
 footer{
@@ -152,30 +158,41 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;    
-        width: 100%;
     }
     .profile__center-container{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;          
+    }
+    .profile__image-container{
+        width: 100%;
     }
     .profile__content h1{
         text-align: center;
     }
+    .profile__content{
+        width: 100%;
+        text-align: center;
+    }
+   
     .profile__text--size{
         width: 100%;
     }
     .profile__list{
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 30px;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
     .profile__list li{
         border: 1px solid black;
-        border-radius: 100%;
-        width: 130px;
-        height: 130px;
-       
+        gap: 30px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
     }
+    
  .profile__list-item--button{
         display: flex;
         justify-content: center;
@@ -187,6 +204,7 @@ footer{
        margin-bottom: 30px;
        font-size : 20px;
     }
+   
     hr{
         width: calc(100% - 40px);
         margin: 0 auto; 
