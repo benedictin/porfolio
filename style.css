@@ -36,9 +36,10 @@ nav{
     background-color: black;
 }
 .profile__center-container{
+    max-width: 900px;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 90px;
+    align-items: center;
+    margin: 100px auto;
     
 }   
     
@@ -57,14 +58,17 @@ h1{
     font-size: 45px;
 }
 .profile__content{
-   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 }
 .profile__text--strong{
     font-weight: bold;
 }
 .profile__text--size{
-    width: 50%;
-    text-align: justify;
+    max-width: 350px;
+    margin-top: 9px;
+   
 }
 
 .profile__list{
@@ -155,7 +159,7 @@ footer{
    width: 85%;
    margin: auto;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     nav{
         display: flex;
         flex-direction: column;
@@ -180,11 +184,13 @@ footer{
     }
    
     .profile__text--size{
-        width: 100%;
+        max-width: 100%;
+        
     }
     .profile__list{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-bottom: 10%;
         margin-top: 10%;
     }
@@ -193,7 +199,7 @@ footer{
         gap: 30px;
         width: 100px;
         height: 100px;
-        border-radius: 50%;
+        border-radius: 100%;
     }
     
  .profile__list-item--button{
@@ -204,8 +210,8 @@ footer{
        display: flex;
        align-items: center;
        justify-content: center;
-       margin-bottom: 30px;
-       font-size : 20px;
+       margin-bottom: 40px;
+       font-size : 0.8rem;
     }
    
     hr{
