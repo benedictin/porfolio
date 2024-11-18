@@ -102,11 +102,17 @@ h1{
     background-color: #80d8da;
 }
 
-.wrapper{
-    margin: 1% 7% 3%;
+.main_title{
+    
+    margin-top: 30px;
 }
 .wrapper__title{
-    margin: 4% 0 4% 0;
+   margin-top: 30px;
+}
+
+.wrapper{
+    
+    margin: 20px 0px;
 }
 .wrapper__detail-text-strong{
     font-weight: bold
@@ -114,6 +120,7 @@ h1{
 .wrapper__detail{
     display: flex;
     justify-content: space-between;
+   
 }
 hr{
     width: 100%;
@@ -127,6 +134,9 @@ hr{
 .wrapper__detail--text-content{
     width: 40%;
     text-align: justify;
+}
+.text-content{
+    width: 400px;
 }
 .image {
     width: 20%;
@@ -207,7 +217,7 @@ svg{
         margin-top: 10%;
     }
     .profile__list li{
-        border: 1px solid black;
+       
         gap: 30px;
         width: 100px;
         height: 100px;
@@ -239,6 +249,7 @@ svg{
     }
     .wrapper__detail{
         display: block;
+        margin-top: 20px;
         
     }
     .wrapper__detail img{
@@ -249,6 +260,10 @@ svg{
         width: 100%;
         margin-bottom: 5%;
         margin-top: 5%;
+    }
+    .wrapper__detail{
+        display: flex;
+        flex-direction: column-reverse;
     }
     .cvt__itle{
         text-align: center;
