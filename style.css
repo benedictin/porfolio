@@ -122,6 +122,8 @@ h1{
     justify-content: space-between;
    
 }
+
+
 hr{
     width: 100%;
     /* margin: auto 5%; 
@@ -143,12 +145,11 @@ hr{
     height: auto;
     max-height: 200px;
   }
-.contact__section{
-   margin: 5% 20%  13%;
-}
+
 .contact__info{
     display: flex;
-    justify-content: space-between;
+    gap: 250px;
+    justify-content: center;
 }
 .contact__form-group{
     margin-right: 4%;
@@ -162,9 +163,17 @@ textarea{
     border-color: black;
 }
 .profile__list-item--submit{
-    margin-top: 25%;
+    margin-top: 50px;
+    width: 100%;
    
 
+}
+.contact__info--detail{
+    margin: 10px 0px;
+}
+.contact{
+    display: flex;
+    margin-bottom: 10px;
 }
 footer{
    display: flex;
@@ -225,28 +234,40 @@ svg{
     }
     
  .profile__list-item--button{
-        display: flex;
-        justify-content: center;
-    }   
-    .profile__list li a{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin-bottom: 40px;
-       font-size : 0.8rem;
-    }
+    display: flex;
+    justify-content: center;
+}   
+.profile__list li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size : 0.8rem;
+}
+.profile__list-item--submit{
+    margin-top: 100px;
+    width: 100%;
    
+}  
     hr{
         width: calc(100% - 40px);
         margin: 0 auto; 
         display: block;
     }
-    .contact__info{
+    .contact__info,.contact{
         display: block;
     }
-    .submit-contact{
-        margin-top: 25%;
+    .contact__form-group input, textarea {
+        border: 1px solid rgb(149, 148, 148); /* Ajout de la propriété border */
+        width: 90%;
     }
+    .contact__section{
+        padding: 6px;
+    }
+    .contact-info--block{
+        display: none;
+    }
+    
     .wrapper__detail{
         display: block;
         margin-top: 20px;
@@ -267,6 +288,9 @@ svg{
     }
     .cvt__itle{
         text-align: center;
+    }
+    .wrapper{
+        padding: 20px;
     }
     footer{
         display: block;
