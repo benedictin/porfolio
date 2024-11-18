@@ -37,7 +37,9 @@ nav{
 }
 .profile__center-container{
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    margin-top: 90px;
+    
 }   
     
 .profile__image-container img {
@@ -174,6 +176,7 @@ footer{
     .profile__content{
         width: 100%;
         text-align: center;
+      
     }
    
     .profile__text--size{
